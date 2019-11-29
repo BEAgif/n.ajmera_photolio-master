@@ -84,7 +84,7 @@ if (item) {
 <p>some text goes here.</p>
 </div>
 </div>
-<input type="button" onclick="unhide(this, 'loadm')" value="unhide">
+<input type="button" onclick="unhide(some, 'loadm')" value="unhide">
 </body>
 
 <!-- Navbar (sit on top) -->
@@ -239,6 +239,17 @@ if (item) {
 <div id="loadm">
   <button> class="w3-button w3-padding-large w3-black" style="margin-top:64px">LOAD MORE </button>
 </div>
+
+<!--photo under button-->
+<body>
+<div id="loadm" class="hidden">
+<div class="content3">
+<p>some text goes here.</p>
+</div>
+</div>
+<input type="button" onclick="unhide(some, 'loadm')" value="unhide">
+</body>
+
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
