@@ -23,10 +23,10 @@ if (item) {
 </script>
 
 <body>
-<div id="about" class="hidden">
+<div id="loadm" class="hidden">
 <div class="content3">
 <p>some text goes here.</p>
 </div>
 </div>
-<input type="button" onclick="unhide(this, 'about')" value="unhide">
+<input type="button" onclick="unhide(this, 'loadm')" value="unhide">
 </body>
