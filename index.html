@@ -222,10 +222,6 @@ if (item) {
       <div class="w3-col m3">
         <img src="/n.ajmera_photolio-master/n.ajmera_photolio-master/Intersection.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intersection">
       </div>
-
-      <div class="w3-col m3">
-        <img src="/n.ajmera_photolio-master/n.ajmera_photolio-master/UMN.jpg" style="width:100%; visibility:hidden" onclick="onClick(this)" class="w3-hover-opacity" alt="UMN" >
-      </div>
     </div>
   </div>
 </div>
@@ -236,14 +232,13 @@ if (item) {
       <p>some text goes here.</p>
     </div>
   </div>
-  <input type="button" onclick="unhide(some, 'loadm')" value="unhide">
+  <input type="button" onclick="unhide(some, 'loadm')" value="unhide" class="w3-button w3-padding-large w3-black" style="margin-top:64px; align-self:center">LOAD MORE>
 </body>
-<div id="loadm">
-  <button class="w3-button w3-padding-large w3-black" style="margin-top:64px; align-self:center">LOAD MORE </button>
+
+<!--photo under sbutton-->
+<div class="w3-col m3">
+  <img src="/n.ajmera_photolio-master/n.ajmera_photolio-master/UMN.jpg" style="width:100%; visibility:hidden" onclick="onClick(this)" class="w3-hover-opacity" alt="UMN" >
 </div>
-
-<!--photo under button-->
-
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
