@@ -65,7 +65,7 @@ body, html {
 }
 </style>
 <script type="text/javascript">
-    function unhide("button12", 'loadm') {
+    function unhide('button12', 'loadm') {
     var item = document.getElementById('loadm');
     if (item) {
             item.className=(item.className=='hidden')?'unhidden':'hidden';
@@ -75,12 +75,12 @@ body, html {
 </script>
 
 <script type="text/javascript">
-function unhide("button12", 'loadm') {
+function unhide('button12', 'loadm') {
 var item = document.getElementById('loadm');
 if (item) {
   if(item.className=='hidden'){
     item.className = 'unhidden' ;
-    clickedButton.value = 'hide'
+    button12.value = 'hide'
   }else{
     item.className = 'hidden';
     clickedButton.value = "unhide"
@@ -239,7 +239,7 @@ if (item) {
       </div>
     </div>
     <!--load more button-->
-    <button id=button12 class="w3-button w3-padding-large w3-black" onclick="unhide(img, 'loadm')" value="Load More" style="margin-bottom:64px; margin-top:64px">LOAD MORE</button>
+    <button id=button12 class="w3-button w3-padding-large w3-black" onclick="unhide("loadm")" value="Load More" style="margin-bottom:64px; margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
