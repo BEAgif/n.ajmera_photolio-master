@@ -65,17 +65,17 @@ body, html {
 }
 </style>
 <script type="text/javascript">
-    function unhide("w3-button w3-padding-large w3-black", 'loadm') {
+    function unhide("button12", 'loadm') {
     var item = document.getElementById('loadm');
     if (item) {
             item.className=(item.className=='hidden')?'unhidden':'hidden';
         }
-        document.getElementById(otherDivId).className = 'hidden';
+        document.getElementById('loadm').className = 'hidden';
     }
 </script>
 
 <script type="text/javascript">
-function unhide("w3-button w3-padding-large w3-black", 'loadm') {
+function unhide("button12", 'loadm') {
 var item = document.getElementById('loadm');
 if (item) {
   if(item.className=='hidden'){
@@ -239,7 +239,7 @@ if (item) {
       </div>
     </div>
     <!--load more button-->
-    <button class="w3-button w3-padding-large w3-black" onclick="unhide(img, 'loadm')" value="Load More" style="margin-bottom:64px; margin-top:64px">LOAD MORE</button>
+    <button id=button12 class="w3-button w3-padding-large w3-black" onclick="unhide(img, 'loadm')" value="Load More" style="margin-bottom:64px; margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
