@@ -65,8 +65,18 @@ body, html {
 }
 </style>
 <script type="text/javascript">
-function unhide(clickedButton, divID) {
-var item = document.getElementById(divID);
+    function unhide("w3-button w3-padding-large w3-black", 'loadm') {
+    var item = document.getElementById('loadm');
+    if (item) {
+            item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+        document.getElementById(otherDivId).className = 'hidden';
+    }
+</script>
+
+<script type="text/javascript">
+function unhide("w3-button w3-padding-large w3-black", 'loadm') {
+var item = document.getElementById('loadm');
 if (item) {
   if(item.className=='hidden'){
     item.className = 'unhidden' ;
@@ -76,7 +86,6 @@ if (item) {
     clickedButton.value = "unhide"
   }
 }}
-
 </script>
 
 
@@ -226,7 +235,7 @@ if (item) {
   </div>
 </div>
 
-<!--photo under sbutton-->
+<!--photo under button-->
 <div id="loadm" class="w3-col m3">
   <img src="/n.ajmera_photolio-master/n.ajmera_photolio-master/UMN.jpg" style="width:100%; visibility:hidden" onclick="onClick(this)" class="w3-hover-opacity" alt="UMN" >
 </div>
