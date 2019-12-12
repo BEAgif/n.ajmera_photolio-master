@@ -55,40 +55,16 @@ body, html {
 <body>
 
 <!-- Javascript for load more button-->
-<style>
-.hidden{
-  display:none;
-}
-
-.unhidden{
-  display:inline;
-}
-</style>
 <script type="text/javascript">
-    function unhide('button12', 'loadm') {
-    var item = document.getElementById('loadm');
-    if (item) {
-            item.className=(item.className=='hidden')?'unhidden':'hidden';
-        }
-        document.getElementById('loadm').className = 'hidden';
+  function unhide() {
+    var x = document.getElementById("loadm");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
-</script>
-
-<script type="text/javascript">
-function unhide('button12', 'loadm') {
-var item = document.getElementById('loadm');
-if (item) {
-  if(item.className=='hidden'){
-    item.className = 'unhidden' ;
-    button12.value = 'hide'
-  }else{
-    item.className = 'hidden';
-    clickedButton.value = "unhide"
   }
-}}
 </script>
-
-
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -232,14 +208,14 @@ if (item) {
         <img src="/n.ajmera_photolio-master/n.ajmera_photolio-master/Intersection.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intersection">
       </div>
       <!--photo hidden-->
-      <div id="loadm" class="hidden">
+      <div id="loadm">
         <div class="w3-col m3">
           <img src="/n.ajmera_photolio-master/n.ajmera_photolio-master/UMN.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="UMN" >
         </div>
       </div>
     </div>
     <!--load more button-->
-    <button id=button12 class="w3-button w3-padding-large w3-black" onclick="unhide("loadm")" value="Load More" style="margin-bottom:64px; margin-top:64px">LOAD MORE</button>
+    <button class="w3-button w3-padding-large w3-black" onclick="unhide("loadm")" value="Load More" style="margin-bottom:64px; margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
